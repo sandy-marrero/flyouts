@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_flyouts_background"
+    tools:context=".BulletinComposeActivity">
+
+    <Button
+        android:id="@+id/btnUploadItemImageFlyer"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="184dp"
+        android:backgroundTint="#39B30C"
+        android:text="Upload Image (Required)" />
+
+    <TextView
+        android:id="@+id/tvCreateFlyerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="33dp"
+        android:text="Post a flyer!"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/btnPostItemFlyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#39B30C"
+        android:text="Post Flyer" />
+
+    <ImageView
+        android:id="@+id/ivItemPicturePreviewFlyer"
+        android:layout_width="wrap_content"
+        android:layout_height="293dp"
+        android:layout_above="@+id/btnPostItemFlyer"
+        android:layout_below="@+id/btnUploadItemImageFlyer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="-29dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etItemNameFlyerContainer"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="73dp"
+        android:hint="Title (Required)"
+        android:textColorHint="@color/grey"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="#39B30C"
+        app:hintEnabled="false"
+        app:hintTextColor="#39B30C">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etItemNameFlyer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Title (Required)"
+            android:includeFontPadding="false"
+            android:inputType="textShortMessage"
+            android:textColor="@color/grey"
+            android:textColorHint="#77353535" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etDescriptionFlyerContainer"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="266dp"
+        android:layout_height="89dp"
+        android:layout_below="@+id/etItemNameFlyerContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="73dp"
+        android:gravity="start|top"
+        android:hint="Description (Required)"
+        android:textColorHint="@color/grey"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="#39B30C"
+        app:hintEnabled="false"
+        app:hintTextColor="#39B30C">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescriptionFlyer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Description (Required)"
+            android:includeFontPadding="false"
+            android:inputType="textMultiLine"
+            android:minLines="8"
+            android:textColor="@color/grey"
+            android:textColorHint="#77353535" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
